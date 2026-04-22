@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDR Alltag & Kultur - Zeitgeschichte der DDR</title>
+    <meta name="description" content="Eine umfassende Dokumentation über Alltag und Kultur in der Deutschen Demokratischen Republik (DDR) von 1949 bis 1990.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🇩🇪 DDR Alltag & Kultur</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Startseite</a></li>
+                <li><a href="#alltag" class="nav-link">Alltag</a></li>
+                <li><a href="#kultur" class="nav-link">Kultur</a></li>
+                <li><a href="#geschichte" class="nav-link">Geschichte</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                <button class="dark-mode-toggle" id="darkModeToggle">🌙</button>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Alltag & Kultur in der DDR</h1>
+            <p>Eine Zeitreise durch 41 Jahre deutsche Geschichte</p>
+            <p class="subtitle">Von 1949 bis 1990: Gesellschaft, Alltag und Kultur in der Deutschen Demokratischen Republik</p>
+            <button class="cta-button" onclick="document.getElementById('alltag').scrollIntoView({behavior: 'smooth'})">Mehr erfahren</button>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Alltag Section -->
+    <section id="alltag" class="section">
+        <div class="container">
+            <h2>Alltag in der DDR</h2>
+            <p class="section-intro">Der Alltag in der DDR war geprägt durch staatliche Kontrolle, Planwirtschaft und eine distinct Gesellschaftskultur.</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>🏠 Wohnen</h3>
+                    <p>Die Plattenbauarchitektur prägte das Stadtbild.</p>
+                </div>
+                <div class="card">
+                    <h3>💼 Arbeit</h3>
+                    <p>Vollbeschäftigung war garantiert und ein Hauptziel des Sozialismus.</p>
+                </div>
+                <div class="card">
+                    <h3>🛒 Einkaufen</h3>
+                    <p>Die Mangelwirtschaft war Realität.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="section">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn-primary">Senden</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
